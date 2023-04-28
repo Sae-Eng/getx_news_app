@@ -1,16 +1,54 @@
-# getx_news_app
+# GetX News App
 
-A new Flutter project.
+このリポジトリは、GetXを使用したニュースアプリのサンプルプロジェクトです。このプロジェクトは、[このZennの記事](https://zenn.dev/sae_eng/articles/7d3ff44eacd92e)に従って作成されました。
 
-## Getting Started
+## 概要
 
-This project is a starting point for a Flutter application.
+GetX News Appは、GetXの依存性注入の解説用に作成したシンプルなニュースアプリです。
 
-A few resources to get you started if this is your first Flutter project:
+## 機能
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- NewsAPIからニュースのトップヘッドラインを取得
+- トップヘッドラインをリストビューで表示
+- ニュースの詳細ページへのリンク
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 前提条件
+
+- Flutter SDKのインストール
+- Dartのインストール
+- エディタ (VSCode, Android Studio, IntelliJなど)
+
+## インストール方法
+
+1. このリポジトリをクローンまたはダウンロードします。
+
+    ```
+    git clone https://github.com/Sae-Eng/getx_news_app.git
+    ```
+
+2. プロジェクトディレクトリに移動します。
+
+    ```
+    cd getx_news_app
+    ```
+
+3. 依存関係をインストールします。
+
+    ```
+    flutter pub get
+    ```
+
+4. エミュレータや実機を起動し、アプリを実行します。
+
+    ```
+    flutter run
+    ```
+
+## ライセンス
+
+このプロジェクトは[MITライセンス](LICENSE)のもとで公開されています。
+
+## 参考資料
+
+- [GetX公式ドキュメント](https://pub.dev/packages/get)
+- [Zenn記事: GetXを使ったシンプルなニュースアプリの作り方](https://zenn.dev/sae_eng/articles/7d3ff44eacd92e)

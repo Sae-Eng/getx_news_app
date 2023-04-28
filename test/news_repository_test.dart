@@ -3,6 +3,7 @@ import 'package:getx_news_app/api/news_api_client.dart';
 import 'package:getx_news_app/repository/news_repository.dart';
 import 'package:mockito/mockito.dart';
 
+// NewsApiClientをモック化するクラス
 class MockNewsApiClient extends Mock implements NewsApiClient {
   @override
   Future<List<dynamic>> fetchTopHeadlines() async {
@@ -31,6 +32,7 @@ void main() {
     newsRepository = NewsRepository(apiClient: apiClient);
   });
 
+  // fetchTopHeadlinesが記事のリストを返すことをテストします。
   test('fetchTopHeadlines returns a list of articles', () async {
     final result = await newsRepository.getTopHeadlines();
     expect(result, isNotNull);

@@ -5,9 +5,11 @@ import 'package:url_launcher/url_launcher.dart';
 import '../vm/news_view_model.dart';
 import 'error_state_widget.dart';
 
+/// ニュース記事一覧ページを表示するウィジェット
 class NewsPage extends StatelessWidget {
   const NewsPage({super.key});
 
+  // URLを開くヘルパーメソッド
   Future<void> _launchURL(Uri url) async {
     if (await canLaunchUrl(url)) {
       await launchUrl(url);
@@ -54,6 +56,7 @@ class NewsPage extends StatelessWidget {
           );
         }
       }),
+      // リフレッシュボタン
       floatingActionButton: FloatingActionButton(
         onPressed: () => viewModel.fetchTopHeadlines(),
         child: const Icon(Icons.refresh),

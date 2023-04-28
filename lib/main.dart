@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      // 初期バインディングを設定
       initialBinding: BindingsBuilder(() {
         Get.put(NewsApiClient());
         Get.put(NewsRepository(apiClient: Get.find()));
